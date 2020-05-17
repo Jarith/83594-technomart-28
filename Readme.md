@@ -1,7 +1,9 @@
 # Личный проект «Техномарт»
 
-* Студент: [Евгений Городилов](https://up.htmlacademy.ru/htmlcss/28/user/83594).
-* Наставник: [Валентина Видяева](https://htmlacademy.ru/profile/id189794).
+- Студент: [Евгений Городилов](https://up.htmlacademy.ru/htmlcss/28/user/83594).
+- Наставник: [Валентина Видяева](https://htmlacademy.ru/profile/id189794).
+
+![](https://github.com/Jarith/83594-technomart-28/workflows/Html5Validation/badge.svg)
 
 ---
 
