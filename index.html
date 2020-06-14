@@ -65,34 +65,34 @@
     </header>
     <main>
       <section>
-        <h2>Популярные категории товаров</h2>
-        <ul>
-          <li>
+        <h2 class="visually-hidden">Популярные категории товаров</h2>
+        <ul class="popular-categories">
+          <li class="tile popular-categories__item--materials">
             <div>
-              <h3>Материалы</h3>
+              <h3 class="header-3">Материалы</h3>
               <span>New</span>
-              <a href="catalog.html">На любой вкус</a>
+              <a class="button-label" href="catalog.html">На любой вкус</a>
             </div>
           </li>
-          <li>
+          <li class="tile popular-categories__item--tools">
             <div>
-              <h3>Инструмент</h3>
-              <a href="catalog.html">На все случаи</a>
+              <h3 class="header-3">Инструмент</h3>
+              <a class="button-label" href="catalog.html">На все случаи</a>
             </div>
           </li>
-          <li>
+          <li class="tile popular-categories__item--mechanism">
             <div>
-              <h3>Техника</h3>
-              <a href="catalog.html">Для стройки</a>
+              <h3 class="header-3">Техника</h3>
+              <a class="button-label" href="catalog.html">Для стройки</a>
             </div>
           </li>
         </ul>
-        <div>
+        <div class="popular-categories__slider">
           <ul>
-            <li>
+            <li class="popular-categories__slider__item">
               <div>
-                <h3>Перфораторы</h3>
-                <p>Настоящие мужские игрушки</p>
+                <h3 class="header-1">Перфораторы</h3>
+                <p class="paragraph-2">Настоящие мужские игрушки</p>
               </div>
               <img
                 src="img/pics/rot-hammers.jpg"
@@ -100,12 +100,16 @@
                 width="620"
                 height="266"
               />
-              <a href="catalog.html">Открыть каталог</a>
+              <a
+                class="action-button action-button--red button-label"
+                href="catalog.html"
+                >Открыть каталог</a
+              >
             </li>
-            <li>
+            <li class="popular-categories__slider__item">
               <div>
-                <h3>Дрели</h3>
-                <p>Соседям на радость!</p>
+                <h3 class="header-1">Дрели</h3>
+                <p class="paragraph-2">Соседям на радость!</p>
               </div>
               <img
                 src="img/pics/drills.jpg"
@@ -113,7 +117,11 @@
                 width="620"
                 height="266"
               />
-              <a href="catalog.html">Открыть каталог</a>
+              <a
+                class="action-button action-button--red button-label"
+                href="catalog.html"
+                >Открыть каталог</a
+              >
             </li>
           </ul>
           <button type="button">Назад</button>
@@ -124,14 +132,14 @@
             <li>2</li>
           </ul>
         </div>
-        <ul>
-          <li>
+        <ul class="offers">
+          <li class="tile offers__item--discount">
             <div>
               <h3>Скидки 50%</h3>
               <a href="catalog.html">На 350 товаров</a>
             </div>
           </li>
-          <li>
+          <li class="tile offers__item--delivery">
             <div>
               <h3>Доставка</h3>
               <a href="#">Бесплатно</a>
@@ -287,51 +295,53 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="services">
         <div>
-          <h2>Сервисы</h2>
-          <p>
+          <h2 class="header-2">Сервисы</h2>
+          <p class="paragraph-1">
             Хороший Интернет-магазин отличается от плохого не только ценами! Мы
             стараемся изо всех сил, чтобы сделать ваши покупки приятными.
           </p>
         </div>
         <div>
-          <ul>
-            <li>
+          <ul class="services__menu">
+            <li class="services__menu__item services__menu__item--active">
               <a href="#">Доставка</a>
             </li>
-            <li>
+            <li class="services__menu__item">
               <a href="#">Гарантия</a>
             </li>
-            <li>
+            <li class="services__menu__item">
               <a href="#">Кредит</a>
             </li>
           </ul>
-          <ul>
-            <li>
-              <h2>Доставка</h2>
-              <p>
+          <ul class="services__content">
+            <li class="services__content__item">
+              <h2 class="header-4">Доставка</h2>
+              <p class="paragraph-1">
                 Мы с удовольствием доставим ваш товар прямо к вашему подъезду
                 совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
                 на ваш этаж!
               </p>
             </li>
-            <li>
-              <h2>Гарантия</h2>
-              <p>
+            <li class="services__content__item">
+              <h2 class="header-4">Гарантия</h2>
+              <p class="paragraph-1">
                 Если купленный у нас товар поломается или заискрит, а также в
                 случае пожара, спровоцированного его возгоранием, вы всегда
                 можете быть уверены в нашей гарантии. Мы обменяем сгоревший
                 товар на новый. Дом уж восстановите как-нибудь сами.
               </p>
             </li>
-            <li>
-              <h2>Кредит</h2>
-              <p>
+            <li class="services__content__item">
+              <h2 class="header-4">Кредит</h2>
+              <p class="paragraph-1">
                 Залезть в долговую яму стало проще! Кредитные консультанты
                 придут вам на помощь.
               </p>
-              <a href="#">Отправить заявку</a>
+              <a class="action-button action-button--red button-label" href="#"
+                >Отправить заявку</a
+              >
             </li>
           </ul>
         </div>
@@ -348,12 +358,14 @@
             Мы можем доставить ваш товар в самые отдаленные точки России!
             Техномарт работает со многими транспортными компаниями:
           </p>
-          <ul>
+          <ul class="contacts__delivery-companies">
             <li>Деловые линии</li>
             <li>Автотрейдинг</li>
             <li>ЖелДорЭкспедиция</li>
           </ul>
-          <a class="button-label" href="#">Подробнее о компании</a>
+          <a class="action-button action-button--red button-label" href="#">
+            Подробнее о компании
+          </a>
         </section>
         <section>
           <h2 class="header-2">Контакты</h2>
@@ -361,7 +373,10 @@
             Вы можете забрать товар сами, заехав в наш офис:
           </p>
           <img src="img/pics/map.png" alt="Карта" width="300" height="158" />
-          <button class="button-label" type="button">
+          <button
+            class="action-button action-button--red button-label"
+            type="button"
+          >
             Заблудились? Напишите нам!
           </button>
         </section>
@@ -414,24 +429,43 @@
         </div>
       </div>
     </footer>
-    <section>
+    <section class="contact-us">
       <h2 class="visually-hidden">Напишите нам</h2>
       <button type="button">Закрыть</button>
       <form action="https://echo.htmlacademy.ru/courses" method="POST">
-        <label>
+        <label class="paragraph-2">
           Ваше имя:
-          <input type="text" placeholder="Имя Фамилия" name="name" />
+          <input
+            class="paragraph-1"
+            type="text"
+            placeholder="Имя Фамилия"
+            name="name"
+          />
         </label>
-        <label>
+        <label class="paragraph-2">
           Ваш e-mail:
-          <input type="email" placeholder="email@example.com" name="email" />
+          <input
+            class="paragraph-1"
+            type="email"
+            placeholder="email@example.com"
+            name="email"
+          />
         </label>
-        <label>
+        <label class="paragraph-2">
           Текст письма:
-          <textarea placeholder="В свободной форме" name="text"></textarea>
+          <textarea
+            class="paragraph-1"
+            placeholder="В свободной форме"
+            name="text"
+          ></textarea>
         </label>
-        <div>
-          <button type="submit">Оформить заказ</button>
+        <div class="contact-us__submit">
+          <button
+            class="action-button action-button--red button-label"
+            type="submit"
+          >
+            Отправить
+          </button>
         </div>
       </form>
     </section>

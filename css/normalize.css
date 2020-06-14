@@ -363,3 +363,9 @@ address {
   font-style: normal;
   font-weight: normal;
 }
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
