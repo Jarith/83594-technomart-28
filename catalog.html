@@ -14,52 +14,61 @@
   <body>
     <header class="header">
       <div class="header-menu">
-        <a href="index.html">
-          <img
-            src="img/pics/logo.svg"
-            alt="Логотип Техномарт"
-            width="108"
-            height="18"
-          />
-        </a>
-        <form action="https://echo.htmlacademy.ru/courses" method="GET">
-          <label>
-            <span class="visually-hidden">Поиск:</span>
-            <input type="text" placeholder="Поиск" name="search" />
-          </label>
-        </form>
-        <a href="#">Закладки: 0</a>
-        <a href="#">Корзина: 0</a>
-        <a href="#">Оформить заказ</a>
+        <div class="content-container header-menu__container">
+          <a href="index.html">
+            <img
+              src="img/pics/logo.svg"
+              alt="Логотип Техномарт"
+              width="108"
+              height="18"
+            />
+          </a>
+          <form action="https://echo.htmlacademy.ru/courses" method="GET">
+            <label>
+              <span class="visually-hidden">Поиск:</span>
+              <input type="text" placeholder="Поиск" name="search" />
+            </label>
+          </form>
+          <a href="#">Закладки: 0</a>
+          <a href="#">Корзина: 0</a>
+          <a href="#">Оформить заказ</a>
+        </div>
       </div>
       <div class="header-main">
-        <div class="header-main-content">
-          <p class="header-main-content__title">
-            Интернет-магазин строительных материалов и инструментов для ремонта
-          </p>
-          <address class="address address--big header-4">
-            <a class="header-4" href="tel:+78125550555">+7 (812) 555-05-55</a>
-            <span>г. Санкт-Петербург, ул Б. Конюшенная, д. 19/8</span>
-          </address>
-          <button class="action-button" type="button">
-            Равшан Джамшутович
-          </button>
-          <ul class="header-main-content__action-links">
-            <li><a href="#">Мои заказы</a></li>
-            <li><a href="#">Личный кабинет</a></li>
-          </ul>
+        <div class="content-container">
+          <div class="header-main-content">
+            <p class="header-main-content__title">
+              Интернет-магазин строительных материалов и инструментов для
+              ремонта
+            </p>
+            <address class="address address--big">
+              <a class="header-4" href="tel:+78125550555">+7 (812) 555-05-55</a>
+              <p class="address__street paragraph-6">
+                г. Санкт-Петербург, ул Б. Конюшенная, д. 19/8
+              </p>
+            </address>
+            <div>
+              <button class="action-button" type="button">
+                Равшан Джамшутович
+              </button>
+              <ul class="header-main-content__action-links">
+                <li><a href="#">Мои заказы</a></li>
+                <li><a href="#">Личный кабинет</a></li>
+              </ul>
+            </div>
+          </div>
+          <nav class="navigation-menu-container">
+            <ul class="navigation-menu">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="#">Компания</a></li>
+              <li><a>Каталог</a></li>
+              <li><a href="#">Новости</a></li>
+              <li><a href="#">Спецпредложения</a></li>
+              <li><a href="#">Доставка</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
         </div>
-        <nav class="navigation-menu">
-          <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="#">Компания</a></li>
-            <li><a>Каталог</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Спецпредложения</a></li>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
       </div>
     </header>
     <main>
@@ -399,10 +408,16 @@
         <h2 class="header-3">Товар добавлен в корзину!</h2>
       </div>
       <div class="cart-actions">
-        <a class="cart-actions__button action-button action-button--red button-label" href="#">
+        <a
+          class="cart-actions__button action-button action-button--red button-label"
+          href="#"
+        >
           Оформить заказ
         </a>
-        <button class="cart-actions__button action-button button-label" type="button">
+        <button
+          class="cart-actions__button action-button button-label"
+          type="button"
+        >
           Продолжить покупки
         </button>
       </div>
