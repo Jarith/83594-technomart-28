@@ -14,25 +14,28 @@
   <body>
     <header class="header">
       <div class="header-menu">
-        <a class="logo logo--small" href="#">
-          <img
-            src="img/pics/logo.svg"
-            alt="Логотип Техномарт"
-            width="108"
-            height="18"
-          />
-        </a>
-        <form action="https://echo.htmlacademy.ru/courses" method="GET">
-          <label>
-            <span class="visually-hidden">Поиск:</span>
-            <input type="text" placeholder="Поиск" name="search" />
-          </label>
-        </form>
-        <a class="control-icon-button" href="#">Закладки: 0</a>
-        <a class="control-icon-button" href="#">Корзина: 0</a>
-        <a class="order-button" href="#">Оформить заказ</a>
+        <div class="content-container header-menu__container">
+          <a class="logo logo--small" href="#">
+            <img
+              src="img/pics/logo.svg"
+              alt="Логотип Техномарт"
+              width="108"
+              height="18"
+            />
+          </a>
+          <form action="https://echo.htmlacademy.ru/courses" method="GET">
+            <label>
+              <span class="visually-hidden">Поиск:</span>
+              <input type="text" placeholder="Поиск" name="search" />
+            </label>
+          </form>
+          <a class="control-icon-button" href="#">Закладки: 0</a>
+          <a class="control-icon-button" href="#">Корзина: 0</a>
+          <a class="order-button" href="#">Оформить заказ</a>
+        </div>
       </div>
       <div class="header-main">
+        <div class="content-container">
         <div class="header-main-content">
           <p class="header-main-content__title">
             Интернет-магазин строительных материалов и инструментов для ремонта
@@ -79,8 +82,10 @@
           </ul>
         </nav>
       </div>
+      </div>
     </header>
     <main>
+      <div class="content-container">
       <section>
         <h2 class="visually-hidden">Популярные категории товаров</h2>
         <ul class="popular-categories">
@@ -344,58 +349,63 @@
           </li>
         </ul>
       </section>
+      </div>
       <section class="services">
-        <div>
-          <h2 class="header-2">Сервисы</h2>
-          <p class="paragraph-1">
-            Хороший Интернет-магазин отличается от плохого не только ценами! Мы
-            стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-          </p>
-        </div>
-        <div>
-          <ul class="services__menu">
-            <li class="services__menu__item services__menu__item--active">
-              <a href="#">Доставка</a>
-            </li>
-            <li class="services__menu__item">
-              <a href="#">Гарантия</a>
-            </li>
-            <li class="services__menu__item">
-              <a href="#">Кредит</a>
-            </li>
-          </ul>
-          <ul class="services__content">
-            <li class="services__content__item">
-              <h2 class="header-4">Доставка</h2>
-              <p class="paragraph-1">
-                Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-                совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
-                на ваш этаж!
-              </p>
-            </li>
-            <li class="services__content__item">
-              <h2 class="header-4">Гарантия</h2>
-              <p class="paragraph-1">
-                Если купленный у нас товар поломается или заискрит, а также в
-                случае пожара, спровоцированного его возгоранием, вы всегда
-                можете быть уверены в нашей гарантии. Мы обменяем сгоревший
-                товар на новый. Дом уж восстановите как-нибудь сами.
-              </p>
-            </li>
-            <li class="services__content__item">
-              <h2 class="header-4">Кредит</h2>
-              <p class="paragraph-1">
-                Залезть в долговую яму стало проще! Кредитные консультанты
-                придут вам на помощь.
-              </p>
-              <a class="action-button" href="#">
-                Отправить заявку
-              </a>
-            </li>
-          </ul>
+        <div class="content-container">
+          <div>
+            <h2 class="header-2">Сервисы</h2>
+            <p class="paragraph-1">
+              Хороший Интернет-магазин отличается от плохого не только ценами!
+              Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+            </p>
+          </div>
+          <div>
+            <ul class="services__menu">
+              <li class="services__menu__item services__menu__item--active">
+                <a href="#">Доставка</a>
+              </li>
+              <li class="services__menu__item">
+                <a href="#">Гарантия</a>
+              </li>
+              <li class="services__menu__item">
+                <a href="#">Кредит</a>
+              </li>
+            </ul>
+            <ul class="services__content">
+              <li class="services__content__item">
+                <h2 class="header-4">Доставка</h2>
+                <p class="paragraph-1">
+                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+                  совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
+                  на ваш этаж!
+                </p>
+              </li>
+              <li class="services__content__item">
+                <h2 class="header-4">Гарантия</h2>
+                <p class="paragraph-1">
+                  Если купленный у нас товар поломается или заискрит, а также в
+                  случае пожара, спровоцированного его возгоранием, вы всегда
+                  можете быть уверены в нашей гарантии. Мы обменяем сгоревший
+                  товар на новый. Дом уж восстановите как-нибудь сами.
+                </p>
+              </li>
+              <li class="services__content__item">
+                <h2 class="header-4">Кредит</h2>
+                <p class="paragraph-1">
+                  Залезть в долговую яму стало проще! Кредитные консультанты
+                  придут вам на помощь.
+                </p>
+                <a
+                  class="action-button"
+                  href="#"
+                  >Отправить заявку</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
-      <div class="contacts">
+      <div class="contacts content-container">
         <section>
           <h1 class="section-title">Компания "Техномарт"</h1>
           <p class="description">

@@ -11,6 +11,13 @@
 html {
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 /* Sections
@@ -19,7 +26,6 @@ html {
 /**
    * Remove the margin in all browsers.
    */
-
 body {
   margin: 0;
 }
@@ -362,6 +368,7 @@ ul {
 address {
   font-style: normal;
   font-weight: normal;
+  box-sizing: border-box;
 }
 
 fieldset {
