@@ -14,7 +14,7 @@
   <body>
     <header class="header">
       <div class="header-menu">
-        <div class="content-container header-menu__container">
+        <div class="header-menu__container content-container">
           <a class="logo logo--small" href="#">
             <img
               src="img/pics/logo.svg"
@@ -23,10 +23,19 @@
               height="18"
             />
           </a>
-          <form action="https://echo.htmlacademy.ru/courses" method="GET">
+          <form
+            class="search-container"
+            action="https://echo.htmlacademy.ru/courses"
+            method="GET"
+          >
             <label>
               <span class="visually-hidden">Поиск:</span>
-              <input type="text" placeholder="Поиск" name="search" />
+              <input
+                class="search"
+                type="text"
+                placeholder="Поиск:"
+                name="search"
+              />
             </label>
           </form>
           <a class="control-icon-button" href="#">Закладки: 0</a>
@@ -36,56 +45,65 @@
       </div>
       <div class="header-main">
         <div class="content-container">
-        <div class="header-main-content">
-          <p class="header-main-content__title">
-            Интернет-магазин строительных материалов и инструментов для ремонта
-          </p>
-          <address class="address address--big">
-            <a class="address__phone" href="tel:+78125550555">
-              +7 (812) 555-05-55
-            </a>
-            <span class="address__street">
-              г. Санкт-Петербург, ул Б. Конюшенная, д. 19/8
-            </span>
-          </address>
-          <button
-            class="menu-action-button menu-action-button--icon"
-            type="button"
-          >
-            Войти
-          </button>
-          <button class="menu-action-button" type="button">Регистрация</button>
+          <div class="header-main-content">
+            <p class="header-main-content__title">
+              Интернет-магазин строительных материалов и&nbsp;инструментов для
+              ремонта
+            </p>
+            <address class="address address--big">
+              <a
+                class="address__phone address__phone--big"
+                href="tel:+78125550555"
+              >
+                +7 (812) 555-05-55
+              </a>
+              <span class="address__street">
+                г. Санкт-Петербург, ул Б. Конюшенная, д. 19/8
+              </span>
+            </address>
+            <div class="menu-action-buttons-container">
+              <button
+                class="menu-action-button menu-action-button--icon"
+                type="button"
+              >
+                Войти
+              </button>
+              <button class="menu-action-button" type="button">
+                Регистрация
+              </button>
+            </div>
+          </div>
+          <nav>
+            <ul class="navigation-menu-container">
+              <li class="navigation-item">
+                <a class="navigation-item__title">Главная</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-item__title" href="#">Компания</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-item__title" href="catalog.html"
+                  >Каталог</a
+                >
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-item__title" href="#">Новости</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-item__title" href="#">Спецпредложения</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-item__title" href="#">Доставка</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-item__title" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="navigation-menu">
-          <ul>
-            <li class="navigation-item">
-              <a class="navigation-item__title">Главная</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-item__title" href="#">Компания</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-item__title" href="catalog.html">Каталог</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-item__title" href="#">Новости</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-item__title" href="#">Спецпредложения</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-item__title" href="#">Доставка</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-item__title" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
       </div>
     </header>
     <main>
-      <div class="content-container">
       <section>
         <h2 class="visually-hidden">Популярные категории товаров</h2>
         <ul class="popular-categories">
@@ -349,92 +367,83 @@
           </li>
         </ul>
       </section>
-      </div>
       <section class="services">
-        <div class="content-container">
-          <div>
-            <h2 class="header-2">Сервисы</h2>
-            <p class="paragraph-1">
-              Хороший Интернет-магазин отличается от плохого не только ценами!
-              Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-            </p>
-          </div>
-          <div>
-            <ul class="services__menu">
-              <li class="services__menu__item services__menu__item--active">
-                <a href="#">Доставка</a>
-              </li>
-              <li class="services__menu__item">
-                <a href="#">Гарантия</a>
-              </li>
-              <li class="services__menu__item">
-                <a href="#">Кредит</a>
-              </li>
-            </ul>
-            <ul class="services__content">
-              <li class="services__content__item">
-                <h2 class="header-4">Доставка</h2>
-                <p class="paragraph-1">
-                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-                  совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
-                  на ваш этаж!
-                </p>
-              </li>
-              <li class="services__content__item">
-                <h2 class="header-4">Гарантия</h2>
-                <p class="paragraph-1">
-                  Если купленный у нас товар поломается или заискрит, а также в
-                  случае пожара, спровоцированного его возгоранием, вы всегда
-                  можете быть уверены в нашей гарантии. Мы обменяем сгоревший
-                  товар на новый. Дом уж восстановите как-нибудь сами.
-                </p>
-              </li>
-              <li class="services__content__item">
-                <h2 class="header-4">Кредит</h2>
-                <p class="paragraph-1">
-                  Залезть в долговую яму стало проще! Кредитные консультанты
-                  придут вам на помощь.
-                </p>
-                <a
-                  class="action-button"
-                  href="#"
-                  >Отправить заявку</a
-                >
-              </li>
-            </ul>
-          </div>
+        <div>
+          <h2 class="header-2">Сервисы</h2>
+          <p class="paragraph-1">
+            Хороший Интернет-магазин отличается от плохого не только ценами! Мы
+            стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+          </p>
+        </div>
+        <div>
+          <ul class="services__menu">
+            <li class="services__menu__item services__menu__item--active">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="services__menu__item">
+              <a href="#">Гарантия</a>
+            </li>
+            <li class="services__menu__item">
+              <a href="#">Кредит</a>
+            </li>
+          </ul>
+          <ul class="services__content">
+            <li class="services__content__item">
+              <h2 class="header-4">Доставка</h2>
+              <p class="paragraph-1">
+                Мы с удовольствием доставим ваш товар прямо к вашему подъезду
+                совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
+                на ваш этаж!
+              </p>
+            </li>
+            <li class="services__content__item">
+              <h2 class="header-4">Гарантия</h2>
+              <p class="paragraph-1">
+                Если купленный у нас товар поломается или заискрит, а также в
+                случае пожара, спровоцированного его возгоранием, вы всегда
+                можете быть уверены в нашей гарантии. Мы обменяем сгоревший
+                товар на новый. Дом уж восстановите как-нибудь сами.
+              </p>
+            </li>
+            <li class="services__content__item">
+              <h2 class="header-4">Кредит</h2>
+              <p class="paragraph-1">
+                Залезть в долговую яму стало проще! Кредитные консультанты
+                придут вам на помощь.
+              </p>
+              <a class="action-button" href="#">Отправить заявку</a>
+            </li>
+          </ul>
         </div>
       </section>
-      <div class="contacts content-container">
-        <section>
-          <h1 class="section-title">Компания "Техномарт"</h1>
-          <p class="description">
-            Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров
-            для ремонта и строительства не оставит равнодушными любителей
-            сэкономить на гастарбайтерах.
-          </p>
-          <p class="description">
-            Мы можем доставить ваш товар в самые отдаленные точки России!
-            Техномарт работает со многими транспортными компаниями:
-          </p>
-          <ul class="contacts__delivery-companies">
-            <li>Деловые линии</li>
-            <li>Автотрейдинг</li>
-            <li>ЖелДорЭкспедиция</li>
-          </ul>
-          <a class="action-button" href="#">Подробнее о компании</a>
-        </section>
-        <section>
-          <h2 class="section-title">Контакты</h2>
-          <p class="description">
-            Вы можете забрать товар сами, заехав в наш офис:
-          </p>
-          <img src="img/pics/map.png" alt="Карта" width="300" height="158" />
-          <button class="action-button" type="button">
-            Заблудились? Напишите нам!
-          </button>
-        </section>
-      </div>
+      <section class="contacts">
+        <h1 class="section-title">Компания "Техномарт"</h1>
+        <p class="description">
+          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для
+          ремонта и строительства не оставит равнодушными любителей сэкономить
+          на гастарбайтерах.
+        </p>
+        <p class="description">
+          Мы можем доставить ваш товар в самые отдаленные точки России!
+          Техномарт работает со многими транспортными компаниями:
+        </p>
+        <ul class="contacts__delivery-companies">
+          <li>Деловые линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a class="action-button" href="#">Подробнее о компании</a>
+      </section>
+      <section>
+        <h2 class="section-title">Контакты</h2>
+        <p class="description">
+          Вы можете забрать товар сами, заехав в наш офис:
+        </p>
+        <img src="img/pics/map.png" alt="Карта" width="300" height="158" />
+        <button class="action-button" type="button">
+          Заблудились? Напишите нам!
+        </button>
+      </section>
     </main>
     <footer class="footer">
       <div class="footer-top">
@@ -446,11 +455,14 @@
             height="18"
           />
         </a>
-        <address class="address">
-          <span class="address__street address--small">
+        <address class="address address--small">
+          <span class="address__street address__street--small">
             г. Санкт-Петербург, ул Б. Конюшенная, д. 19/8
           </span>
-          <a class="address__phone address--small" href="tel:+78125550555">
+          <a
+            class="address__phone address__phone--small"
+            href="tel:+78125550555"
+          >
             +7 (812) 555-05-55
           </a>
         </address>
@@ -541,43 +553,24 @@
         </div>
       </div>
     </footer>
-    <section class="contact-us">
+    <section>
       <h2 class="visually-hidden">Напишите нам</h2>
       <button type="button">Закрыть</button>
       <form action="https://echo.htmlacademy.ru/courses" method="POST">
-        <label class="paragraph-2">
+        <label>
           Ваше имя:
-          <input
-            class="paragraph-1"
-            type="text"
-            placeholder="Имя Фамилия"
-            name="name"
-          />
+          <input type="text" placeholder="Имя Фамилия" name="name" />
         </label>
-        <label class="paragraph-2">
+        <label>
           Ваш e-mail:
-          <input
-            class="paragraph-1"
-            type="email"
-            placeholder="email@example.com"
-            name="email"
-          />
+          <input type="email" placeholder="email@example.com" name="email" />
         </label>
-        <label class="paragraph-2">
+        <label>
           Текст письма:
-          <textarea
-            class="paragraph-1"
-            placeholder="В свободной форме"
-            name="text"
-          ></textarea>
+          <textarea placeholder="В свободной форме" name="text"></textarea>
         </label>
-        <div class="contact-us__submit">
-          <button
-            class="action-button action-button--red button-label"
-            type="submit"
-          >
-            Отправить
-          </button>
+        <div>
+          <button type="submit">Оформить заказ</button>
         </div>
       </form>
     </section>

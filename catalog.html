@@ -14,8 +14,8 @@
   <body>
     <header class="header">
       <div class="header-menu">
-        <div class="content-container header-menu__container">
-          <a class="logo logo--small" href="index.html">
+        <div class="header-menu__container content-container">
+          <a class="logo logo--small" href="#">
             <img
               src="img/pics/logo.svg"
               alt="Логотип Техномарт"
@@ -23,68 +23,81 @@
               height="18"
             />
           </a>
-          <form action="https://echo.htmlacademy.ru/courses" method="GET">
+          <form
+            class="search-container"
+            action="https://echo.htmlacademy.ru/courses"
+            method="GET"
+          >
             <label>
               <span class="visually-hidden">Поиск:</span>
-              <input type="text" placeholder="Поиск" name="search" />
+              <input
+                class="search"
+                type="text"
+                placeholder="Поиск:"
+                name="search"
+              />
             </label>
           </form>
           <a class="control-icon-button" href="#">Закладки: 0</a>
-          <a class="control-icon-button cart-full-button" href="#">Корзина: 0</a>
+          <a class="control-icon-button" href="#">Корзина: 0</a>
           <a class="order-button" href="#">Оформить заказ</a>
         </div>
       </div>
       <div class="header-main">
         <div class="content-container">
-        <div class="header-main-content">
-          <p class="header-main-content__title">
-            Интернет-магазин строительных материалов и инструментов для ремонта
-          </p>
-          <address class="address address--big">
-            <a class="address__phone" href="tel:+78125550555">
-              +7 (812) 555-05-55
-            </a>
-            <span class="address__street">
-              г. Санкт-Петербург, ул Б. Конюшенная, д. 19/8
-            </span>
-          </address>
-          <button class="control-icon-button" type="button">
-            Равшан Джамшутович
-          </button>
-          <ul>
-            <li class="action-link">
-              <a class="action-link__name" href="#">Мои заказы</a>
-            </li>
-            <li class="action-link">
-              <a class="action-link__name" href="#">Личный кабинет</a>
-            </li>
-          </ul>
-        </div>
-        <nav class="navigation-menu">
-          <ul>
-            <li class="navigation-item">
-              <a class="navigation-item__title" href="index.html">Главная</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-item__title" href="#">Компания</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-item__title" href="#">Каталог</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-item__title" href="#">Новости</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-item__title" href="#">Спецпредложения</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-item__title" href="#">Доставка</a>
-            </li>
-            <li class="navigation-item">
-              <a class="navigation-item__title" href="#">Контакты</a>
-            </li>
-          </ul>
-        </nav>
+          <div class="header-main-content">
+            <p class="header-main-content__title">
+              Интернет-магазин строительных материалов и инструментов для
+              ремонта
+            </p>
+            <address class="address address--big">
+              <a
+                class="address__phone address__phone--big"
+                href="tel:+78125550555"
+              >
+                +7 (812) 555-05-55
+              </a>
+              <span class="address__street">
+                г. Санкт-Петербург, ул Б. Конюшенная, д. 19/8
+              </span>
+            </address>
+            <button class="control-icon-button" type="button">
+              Равшан Джамшутович
+            </button>
+            <ul>
+              <li class="action-link">
+                <a class="action-link__name" href="#">Мои заказы</a>
+              </li>
+              <li class="action-link">
+                <a class="action-link__name" href="#">Личный кабинет</a>
+              </li>
+            </ul>
+          </div>
+          <nav>
+            <ul class="navigation-menu-container">
+              <li class="navigation-item">
+                <a class="navigation-item__title" href="index.html">Главная</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-item__title" href="#">Компания</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-item__title">Каталог</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-item__title" href="#">Новости</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-item__title" href="#">Спецпредложения</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-item__title" href="#">Доставка</a>
+              </li>
+              <li class="navigation-item">
+                <a class="navigation-item__title" href="#">Контакты</a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
     </header>
@@ -459,13 +472,16 @@
             height="18"
           />
         </a>
-        <address class="address">
-          <span class="address__street address--small">
-            г. Санкт-Петербург, ул Б. Конюшенная, д. 19/8
-          </span>
-          <a class="address__phone address--small" href="tel:+78125550555">
+        <address class="address address--small">
+          <a
+            class="address__phone address__phone--small"
+            href="tel:+78125550555"
+          >
             +7 (812) 555-05-55
           </a>
+          <span class="address__street">
+            г. Санкт-Петербург, ул Б. Конюшенная, д. 19/8
+          </span>
         </address>
         <ul class="footer-nav">
           <li class="footer-nav-link">
@@ -557,19 +573,16 @@
     <section>
       <div>
         <button type="button">Закрыть</button>
-        <h2 class="header-3">Товар добавлен в корзину!</h2>
+        <h2>Товар добавлен в корзину!</h2>
       </div>
       <div class="cart-actions">
         <a
-          class="cart-actions__button action-button action-button--red button-label"
+          class="cart-actions__button action-button action-button--red"
           href="#"
         >
           Оформить заказ
         </a>
-        <button
-          class="cart-actions__button action-button button-label"
-          type="button"
-        >
+        <button class="cart-actions__button action-button" type="button">
           Продолжить покупки
         </button>
       </div>
